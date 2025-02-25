@@ -13,9 +13,9 @@ public class Main {
     public static Student [] students= new Student[5];
     public static void Function(){
        for(int i=0; i<5; i++){
-        if(students[i].score>max){
-           max=students[i].score ;
-            int k=i;
+        if(students[max].score>students[i].score){
+           max=i;
+            
         }
        }
        System.out.print(students[k].name+" "+students[k].score);
