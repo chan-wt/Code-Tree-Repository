@@ -23,11 +23,11 @@ class Distance implements Comparable<Distance> {
 }
 public class Main {
     public static int Function(int x, int y){
-     if(x>0 && y>0)
+     if(x>=0 && y>=0)
       return x+y;
-      else if(x>0 && y<0)
+      else if(x>=0 && y<0)
       return x+y*(-1);
-      else if(x<0 && y>0)
+      else if(x<0 && y>=0)
       return x*(-1)+y;
       else
       return x*(-1)+y*(-1);
