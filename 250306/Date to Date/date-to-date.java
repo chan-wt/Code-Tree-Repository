@@ -8,6 +8,10 @@ public class Main {
         int d2 = sc.nextInt();
         int CountDay=0;
        int [] Month_Day=new int[]{0,31,28,31,30,31,30,31,31,30,31,30,31};
+       if(m1==m2 && d1==d2){
+        CountDay=1;
+       }
+       else{
        while(true){
         if(m1==m2 && d1==d2){
             break;
@@ -17,6 +21,7 @@ public class Main {
        if(d1>Month_Day[m1]){
         m1++;
         d1=0;
+       }
        }
        }
        System.out.print(CountDay);
