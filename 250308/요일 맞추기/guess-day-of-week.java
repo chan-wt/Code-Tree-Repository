@@ -11,6 +11,7 @@ public class Main {
         return totalDay;
     }
     public static String WhichDay(int m2, int d2, int m1, int d1){
+        if(Function(m2,d2)>Function(m1,d1)){
         if((Function(m2,d2)- Function(m1,d1))%7==0)
        return "Mon";
        else if((Function(m2,d2)- Function(m1,d1))%7==1)
@@ -25,6 +26,23 @@ public class Main {
        return "Sat";
        else 
        return "Sun";
+        }
+        else{
+            if((Function(m1,d1)- Function(m2,d2))%7==0)
+       return "Mon";
+       else if((Function(m1,d1)- Function(m2,d2))%7==1)
+       return "Sun";
+       else if((Function(m1,d1)- Function(m2,d2))%7==2)
+       return "Sat";
+       else if((Function(m1,d1)- Function(m2,d2))%7==3)
+       return "Fri";
+       else if((Function(m1,d1)- Function(m2,d2))%7==4)
+       return "Thu";
+       else if((Function(m1,d1)- Function(m2,d2))%7==5)
+       return "Wed";
+       else 
+       return "Tue";
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
