@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static int [] arr= new int[]{0,31,29,31,30,31,30,31,31,30,31,30,31};
     public static int Function(int m, int d){
-        int totalDay=1;
+        int totalDay=0;
         for(int i=1; i<m; i++){
             totalDay+=arr[i];
         }
