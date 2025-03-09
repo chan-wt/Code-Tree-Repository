@@ -18,9 +18,15 @@ public class Main {
        int d2=sc.nextInt();
        String A=sc.next();
        int diff=Function(m2,d2)-Function(m1,d1);
+       int Num=0;
        String [] week =new String[]{"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
+       for(int i=0; i<7; i++){
+        if(week[i].equals(A)){
+          Num=i;
+        }
+       }
        int CountNum= diff%7;
-       if(CountNum>0){
+       if(CountNum>0 && (CountNum>=Num)){
          System.out.print(diff/7+1);
        }
        else
