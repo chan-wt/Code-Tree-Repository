@@ -3,17 +3,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        int N=sc.nextInt();
-       int [] arr= new int[101];
+       int [] arr= new int[300];
        int maxNum=0;
        for(int i=0; i<N; i++){
          int x1=sc.nextInt();
          int x2=sc.nextInt();
-         if(x1<0){
             x1=x1+100;
-         }
-         if(x2<0){
             x2=x2+100;
-         }
+         
          if(x2>maxNum){
             maxNum=x2;
          }
