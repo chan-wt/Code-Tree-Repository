@@ -47,3 +47,4 @@ public class Main {
         // 정답을 출력합니다.
         System.out.print(w + " " + b + " " + g);
     }
+}
