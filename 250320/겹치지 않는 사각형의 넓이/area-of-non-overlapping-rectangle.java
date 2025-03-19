@@ -38,16 +38,16 @@ public class Main {
             area++;
         }
        }
-     }
+     }    //직사각형 색깔 칠하는 과정. 해당 좌표들에 1씩 넣어줌
     AllS=area;
     int extraarea=0;
     for(int x=x1[2]; x<x2[2]; x++){
         for(int y=y1[2]; y<y2[2]; y++)
         if(checkBox[x][y]>=1)
         extraarea++;
-    }
+    }       // 직사각형 M에 대한 넓이 구하는 과정
 
-     System.out.println(AllS-extraarea);
+     System.out.println(AllS-extraarea);  //A+B-M
      
     }
 }
