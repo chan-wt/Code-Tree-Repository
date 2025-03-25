@@ -17,9 +17,10 @@ public class Main {
             cnt++;
             }
         }
+        check[cnt]=n+1;
 
         int max=1;
-        for(int i=0; i<cnt-1; i++){
+        for(int i=0; i<cnt; i++){
             int size=check[i+1]-check[i];
             if(size>max){
                 max=size;
