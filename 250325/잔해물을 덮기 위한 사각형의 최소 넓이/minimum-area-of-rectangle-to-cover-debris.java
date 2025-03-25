@@ -30,7 +30,7 @@ public class Main {
          for(int y=y1[i]; y<y2[i]; y++)
           CheckBox[x][y]=i+1;
        }  
-    
+    /////////이 아래부분을 구현하다 실패함.
        int minX=MAX_N, maxX=0, minY=MAX_N, maxY=0;
        boolean firstRectExist= false;
        for(int x=0; x<=MAX_N; x++)
