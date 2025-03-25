@@ -8,18 +8,23 @@ public class Main {
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
         }
-        int max=0;
-        int cnt=1;
-        for(int i=1; i<n; i++){ 
-            if(arr[i-1]==arr[i]){
-             cnt++;
+
+        int cnt=0;
+        int [] check = new int[1000];
+        for(int i=0; i<n; i++){ 
+            if(i==0 || arr[i]!=arr[i-1]){
+            check[cnt]=i;
+            cnt++;
             }
-            if(cnt>max){
-                max=cnt;
-                cnt=1;
-            }
-         
         }
-        System.out.print(max+1);
+
+        int max=0;
+        for(int i=0; i<cnt-1; i++){
+            int size=check[i+1]-check[i];
+            if(size>max){
+                max=size;
+            }
+        }
+        System.out.print(max);
     }
 }
