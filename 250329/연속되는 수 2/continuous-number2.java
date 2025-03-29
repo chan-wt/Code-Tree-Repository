@@ -8,6 +8,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+
         int cnt=1;
         int max=1;
         int check=0;
@@ -22,8 +23,7 @@ public class Main {
             }
             else if( i==0 ||arr[i]!=arr[i-1])
             {   
-                checkBox[check]=cnt;
-                check++;
+            
                 if(cnt>max){
                 max=cnt;
                 }
