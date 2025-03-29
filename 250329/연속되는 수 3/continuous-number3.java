@@ -8,6 +8,7 @@ public class Main {
         for(int i=0; i<n; i++){
            arr[i]=sc.nextInt();
         }
+
         int cnt=0;
          int cnt1=0;
          int max=0;
@@ -26,8 +27,10 @@ public class Main {
     else{
         max=Math.max(max,cnt1);
     }
-    
+
     }
+    //두 원소의 부호가 같은지 다른지는 두 원소의 곱으로 판단 가능하다. 원소가 같다면 양수가 나올 것이고.
+    //원소가 다르면 음수가 나올것이다.
    
     
     System.out.print(max);
