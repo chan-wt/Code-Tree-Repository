@@ -17,18 +17,15 @@ public class Main {
          for(int i=1; i<n; i++){
             if(arr[i-1]==arr[i]){
             cnt++;
-            if(cnt>max){
-                max=cnt;
-                }
             }
             else if( i==0 ||arr[i]!=arr[i-1])
             {   
-            
-                if(cnt>max){
-                max=cnt;
-                }
                 cnt=1;
             }
+            
+            if(cnt>max){
+                max=cnt;
+                }
          }
          System.out.print(max);
 
